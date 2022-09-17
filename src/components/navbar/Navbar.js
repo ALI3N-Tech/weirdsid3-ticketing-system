@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import pic from "../images/weirdsid3.png";
+import pic from "../../images/weirdsid3.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import "./Navbar.css";
 
 function Navbar() {
@@ -27,11 +27,13 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
-            <img src={pic} alt="" />
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            {click ? <FaBars /> : <FaTimes />}
+          <div className="div-1">
+            <Link to="/" className="navbar-logo">
+              <img src={pic} alt="" />
+            </Link>
+            <div className="menu-icon" onClick={handleClick}>
+              {click ? <FaBars /> : <FaTimes />}
+            </div>
           </div>
           <ul className={click ? "nav-menu" : "nav-menu active"}>
             <li className="nav-item">

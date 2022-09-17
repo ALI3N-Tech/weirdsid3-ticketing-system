@@ -21,8 +21,8 @@ img{
 
 .navbar-container{
     display: flex;
-    margin: auto;
-    width: 80%;
+    /* margin: auto; */
+    width: min(100%-2rem);
     margin-top: 20px;
     
 }
@@ -58,6 +58,28 @@ img{
 
 .nav-links:hover{
     color: var(--outline);
+}
+
+@media (max-width:960px){
+    .nav-menu{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        font-size: 30px;
+    }
+
+    img{
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+
+  
 }
 
 
