@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import pic from "../../images/weirdsid3.png";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -22,13 +22,17 @@ function Navbar() {
     }
   };
 
+  useEffect(() => {
+    showButton();
+  }, []);
+
   window.addEventListener("resize", showButton);
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <div className="div-1">
-            <Link to="/" className="navbar-logo">
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               <img src={pic} alt="" />
             </Link>
             <div className="menu-icon" onClick={handleClick}>
