@@ -63,6 +63,15 @@ function Navbar() {
                 Contact Us
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/sign-up"
+                className="nav-links nav-signup"
+                onClick={closeMobileMenu}
+              >
+                Sign Up
+              </Link>
+            </li>
           </ul>
           {button && <Button buttonStyle="btn--primary">Login</Button>}
           {button && <Button buttonStyle="btn--secondary">Sign up</Button>}
