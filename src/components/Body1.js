@@ -9,7 +9,7 @@ function Body1() {
       <div className="partyBackground">
         <img src={event} alt="" />
         <h1>
-          <span>2 e - RESPONSIBLE</span>
+          <span>2 e - RESPONSIBLE </span>
           CONCERT
         </h1>
       </div>

@@ -11,11 +11,14 @@ img{
 .navbar{
     background: whitesmoke;
     height: 90px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* font-size: 1.2rem; */
-    padding: 0;
+    /* padding: 0; */
+    position: fixed;
+    top: 0;
     
 }
 
@@ -76,6 +79,7 @@ img{
         opacity: 1;
         transition: all 0.5s ease;
         padding-bottom: 30px;
+        z-index: 999;
       }
       
 
@@ -84,7 +88,7 @@ img{
           right: 1px;
           opacity: 1;
           transition: all 0.5s ease;
-          z-index: 1;
+          z-index: 999;
      }
 
      .nav-signup{
